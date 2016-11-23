@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<!--公用文件引入-->
+		<link href="../static/css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/public.css" type="text/css" rel="stylesheet">
+		
+		<!--release.css-->
+		<link href="../static/css/release.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="mask">
+			<div class="info-box success">
+				<div class="tit">发布成功</div>
+				<div class="btn-require font-orange">
+					确定
+				</div>
+			</div>
+		</div>
+		<div class="crossband">
+			<div class="content">
+				<div class="left close">取消</div>
+				<span>发布需求</span>
+				<div class="right release font-orange">发布</div>
+			</div>
+		</div>
+		 	
+		<label class="release-require">
+			<input type="text" name="releaseName" placeholder="用户名">
+		</label>
+		<label class="release-require">
+			<input type="tel" name="releaseTel" placeholder="18956214521"/>
+		</label>
+		<label class="release-require">
+			<textarea placeholder="描述一下您的需求，比如黄埔100-200m²,5-6元/m²/天，环境好点，底层，邻近地铁。"></textarea>
+		</label>
+
+		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../static/js/public.js"></script>
+		<script>
+			$('.release').click(function(){
+				$('.mask').show();
+				$('.success').show();
+				$('.btn-require').click(function(){
+					$('.mask').hide();
+					history.back();
+				})
+			})
+		</script>
+	</body>
+</html>
