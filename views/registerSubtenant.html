@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+		<link href="../static/css/reset.css" type="text/css" rel="stylesheet">
+		<link href="../static/css/public.css" type="text/css" rel="stylesheet">
+		
+		<!--登录注册css-->
+		<link href="../static/css/registerLogin.css" type="text/css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="crossband login">
+			<div class="content">
+				<div class="left back"><img src="../static/images/nav_back_icon@2x.png"></div>
+				<span class="font-orange">转租人</span>
+			</div>
+		</div>
+		<div class="content perfect-info">必填项</div>
+		<div class="perfect-information-box">
+			<div class="addHead">添加头像</div>
+			<label class="margin-top-12"><input type="text" placeholder="姓名"></label>
+			<label><input type="text" placeholder="联系方式"></label>
+			<div class="oneli">房租租赁合同</div>
+		</div>
+		<div class="content perfect-info">选填项</div>
+		<div class="line"></div>
+		<div class="perfect-information-box">
+			<label><input type="text" placeholder="微信号码"></label>
+			<div class="oneli">名片正面</div>
+		</div>
+		<div class="content btn input-after margin-top-45">完成</div>
+
+
+		<script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+		<script src="../static/js/public.js"></script>
+		<script>
+			$('.input-after').click(function(){
+				location.href = 'registerInfoSuccess.html';
+			})
+		</script>
+	</body>
+</html>
